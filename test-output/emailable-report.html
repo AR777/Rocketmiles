@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Command line suite</th></tr><tr><td><a href="#t0">Command line test</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">7,524</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="3">SearchTests</td><td><a href="#m0">initWebBrowser</a></td><td rowspan="3">1565722394848</td><td rowspan="3">0</td></tr><tr class="failedeven"><td><a href="#m1">initWebBrowser</a></td></tr><tr class="failedeven"><td><a href="#m2">initWebBrowser</a></td></tr><tr><th colspan="4">Command line test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">SearchTests</td><td><a href="#m3">createAccountTest</a></td><td rowspan="1">1565722397888</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m4">searchTest1</a></td><td rowspan="1">1565722400220</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m5">searchTest2</a></td><td rowspan="1">1565722402359</td><td rowspan="1">0</td></tr></tbody></table><h2>Command line test</h2><h3 id="m0">SearchTests#initWebBrowser</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Chrome</td><td>public void SearchTests.createAccountTest()</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;IONCHI-LAP95&apos;, ip: &apos;10.12.64.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01047C93+1473683]
+	Ordinal0 [0x00FCADB1+961969]
+	Ordinal0 [0x00F542E3+475875]
+	Ordinal0 [0x00EEF365+62309]
+	Ordinal0 [0x00EEBC77+48247]
+	Ordinal0 [0x00F09149+168265]
+	Ordinal0 [0x00F08D1D+167197]
+	Ordinal0 [0x00F0742B+160811]
+	Ordinal0 [0x00EF0AE6+68326]
+	Ordinal0 [0x00EF1BF0+72688]
+	Ordinal0 [0x00EF1B89+72585]
+	Ordinal0 [0x00FE4B77+1067895]
+	GetHandleVerifier [0x010E6875+506677]
+	GetHandleVerifier [0x010E6610+506064]
+	GetHandleVerifier [0x010ED1B8+533624]
+	GetHandleVerifier [0x010E704A+508682]
+	Ordinal0 [0x00FDC266+1032806]
+	Ordinal0 [0x00FDC0DF+1032415]
+	Ordinal0 [0x00FE6A8B+1075851]
+	Ordinal0 [0x00FE6BF3+1076211]
+	Ordinal0 [0x00FE5BA5+1072037]
+	BaseThreadInitThunk [0x76F8343D+18]
+	RtlInitializeExceptionChain [0x77D69802+99]
+	RtlInitializeExceptionChain [0x77D697D5+54]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$22(ProtocolHandshake.java:365)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:368)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:184)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:171)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:158)
+	at utils.WebBrowser.initWebBrowser(WebBrowser.java:40)
+	at Main.main(Main.java:9)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">SearchTests#initWebBrowser</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Chrome</td><td>public void SearchTests.searchTest2()</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;IONCHI-LAP95&apos;, ip: &apos;10.12.64.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01047C93+1473683]
+	Ordinal0 [0x00FCADB1+961969]
+	Ordinal0 [0x00F542E3+475875]
+	Ordinal0 [0x00EEF365+62309]
+	Ordinal0 [0x00EEBC77+48247]
+	Ordinal0 [0x00F09149+168265]
+	Ordinal0 [0x00F08D1D+167197]
+	Ordinal0 [0x00F0742B+160811]
+	Ordinal0 [0x00EF0AE6+68326]
+	Ordinal0 [0x00EF1BF0+72688]
+	Ordinal0 [0x00EF1B89+72585]
+	Ordinal0 [0x00FE4B77+1067895]
+	GetHandleVerifier [0x010E6875+506677]
+	GetHandleVerifier [0x010E6610+506064]
+	GetHandleVerifier [0x010ED1B8+533624]
+	GetHandleVerifier [0x010E704A+508682]
+	Ordinal0 [0x00FDC266+1032806]
+	Ordinal0 [0x00FDC0DF+1032415]
+	Ordinal0 [0x00FE6A8B+1075851]
+	Ordinal0 [0x00FE6BF3+1076211]
+	Ordinal0 [0x00FE5BA5+1072037]
+	BaseThreadInitThunk [0x76F8343D+18]
+	RtlInitializeExceptionChain [0x77D69802+99]
+	RtlInitializeExceptionChain [0x77D697D5+54]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$22(ProtocolHandshake.java:365)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:368)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:184)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:171)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:158)
+	at utils.WebBrowser.initWebBrowser(WebBrowser.java:40)
+	at Main.main(Main.java:9)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">SearchTests#initWebBrowser</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Chrome</td><td>public void SearchTests.searchTest1()</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;IONCHI-LAP95&apos;, ip: &apos;10.12.64.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01047C93+1473683]
+	Ordinal0 [0x00FCADB1+961969]
+	Ordinal0 [0x00F542E3+475875]
+	Ordinal0 [0x00EEF365+62309]
+	Ordinal0 [0x00EEBC77+48247]
+	Ordinal0 [0x00F09149+168265]
+	Ordinal0 [0x00F08D1D+167197]
+	Ordinal0 [0x00F0742B+160811]
+	Ordinal0 [0x00EF0AE6+68326]
+	Ordinal0 [0x00EF1BF0+72688]
+	Ordinal0 [0x00EF1B89+72585]
+	Ordinal0 [0x00FE4B77+1067895]
+	GetHandleVerifier [0x010E6875+506677]
+	GetHandleVerifier [0x010E6610+506064]
+	GetHandleVerifier [0x010ED1B8+533624]
+	GetHandleVerifier [0x010E704A+508682]
+	Ordinal0 [0x00FDC266+1032806]
+	Ordinal0 [0x00FDC0DF+1032415]
+	Ordinal0 [0x00FE6A8B+1075851]
+	Ordinal0 [0x00FE6BF3+1076211]
+	Ordinal0 [0x00FE5BA5+1072037]
+	BaseThreadInitThunk [0x76F8343D+18]
+	RtlInitializeExceptionChain [0x77D69802+99]
+	RtlInitializeExceptionChain [0x77D697D5+54]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$22(ProtocolHandshake.java:365)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:368)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:184)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:171)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:158)
+	at utils.WebBrowser.initWebBrowser(WebBrowser.java:40)
+	at Main.main(Main.java:9)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">SearchTests#createAccountTest</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">SearchTests#searchTest1</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">SearchTests#searchTest2</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
